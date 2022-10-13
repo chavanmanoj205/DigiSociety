@@ -1,0 +1,924 @@
+2022-10-12 21:34:50.346  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Starting SocietyManagementSystemApplication using Java 1.8.0_261 on DESKTOP-KLAODV1 with PID 8136 (E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem\target\classes started by Anonymous in E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem)
+2022-10-12 21:34:50.358 DEBUG [  restartedMain] c.e.d.SocietyManagementSystemApplication : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-12 21:34:50.361  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2022-10-12 21:34:50.535  INFO [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-12 21:34:51.964  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-12 21:34:52.092  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 7 JPA repository interfaces.
+2022-10-12 21:34:53.071  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2022-10-12 21:34:53.093  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2022-10-12 21:34:53.094  INFO [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-10-12 21:34:53.094  INFO [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-12 21:34:53.228  INFO [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-10-12 21:34:53.229  INFO [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2165 ms
+2022-10-12 21:34:53.257 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-12 21:34:53.257 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-10-12 21:34:53.442  INFO [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-12 21:34:53.643  INFO [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-12 21:34:53.848  INFO [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-12 21:34:53.992  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-10-12 21:34:54.282  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-10-12 21:34:54.299  INFO [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-10-12 21:34:54.517 ERROR [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: @OneToOne or @ManyToOne on com.example.demo.model.Login.owner references an unknown entity: com.example.demo.model.Owner
+2022-10-12 21:34:54.519  WARN [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.example.demo.model.Login.owner references an unknown entity: com.example.demo.model.Owner
+2022-10-12 21:34:54.521  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2022-10-12 21:34:54.533  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2022-10-12 21:34:54.537  INFO [  restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-10-12 21:34:54.558  INFO [  restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-12 21:34:54.597 ERROR [  restartedMain] o.s.b.SpringApplication                  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.example.demo.model.Login.owner references an unknown entity: com.example.demo.model.Owner
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.SocietyManagementSystemApplication.main(SocietyManagementSystemApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.example.demo.model.Login.owner references an unknown entity: com.example.demo.model.Owner
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:100)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1750)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1694)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1623)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:295)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 21 more
+2022-10-12 21:36:37.171  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Starting SocietyManagementSystemApplication using Java 1.8.0_261 on DESKTOP-KLAODV1 with PID 8412 (E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem\target\classes started by Anonymous in E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem)
+2022-10-12 21:36:37.185 DEBUG [  restartedMain] c.e.d.SocietyManagementSystemApplication : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-12 21:36:37.189  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2022-10-12 21:36:37.342  INFO [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-12 21:36:38.272  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-12 21:36:38.393  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 7 JPA repository interfaces.
+2022-10-12 21:36:39.352  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2022-10-12 21:36:39.379  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2022-10-12 21:36:39.380  INFO [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-10-12 21:36:39.381  INFO [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-12 21:36:39.513  INFO [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-10-12 21:36:39.513  INFO [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2169 ms
+2022-10-12 21:36:39.542 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-12 21:36:39.542 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-10-12 21:36:39.732  INFO [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-12 21:36:39.931  INFO [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-12 21:36:40.140  INFO [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-12 21:36:40.283  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-10-12 21:36:40.575  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-10-12 21:36:40.591  INFO [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-10-12 21:36:42.238  INFO [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-12 21:36:42.254  INFO [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-12 21:36:42.884  WARN [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-12 21:36:43.082 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-12 21:36:43.188 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-10-12 21:36:43.227 DEBUG [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-12 21:36:43.247 DEBUG [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-12 21:36:43.606  INFO [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-12 21:36:43.637  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2022-10-12 21:36:43.665  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2022-10-12 21:36:43.683  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Started SocietyManagementSystemApplication in 7.047 seconds (JVM running for 9.076)
+2022-10-12 21:39:32.662  INFO [nio-9000-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-12 21:39:32.664  INFO [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-10-12 21:39:32.664 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2022-10-12 21:39:32.665 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected AcceptHeaderLocaleResolver
+2022-10-12 21:39:32.665 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2022-10-12 21:39:32.666 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2d9a38a4
+2022-10-12 21:39:32.667 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@54c3428d
+2022-10-12 21:39:32.667 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-12 21:39:32.667  INFO [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2022-10-12 21:39:32.683 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : POST "/add", parameters={}
+2022-10-12 21:39:32.696 DEBUG [nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.RoleController#addRoleData(Role)
+2022-10-12 21:39:32.826 DEBUG [nio-9000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Role(rid=1, roleType=admin)]
+2022-10-12 21:39:32.839  INFO [nio-9000-exec-2] c.e.d.c.RoleController                   : Check Role Data : Role(rid=1, roleType=admin)
+2022-10-12 21:39:32.840  INFO [nio-9000-exec-2] c.e.d.s.RoleServiceImpl                  : Role Inserting........!
+2022-10-12 21:39:33.328  INFO [nio-9000-exec-2] c.e.d.s.RoleServiceImpl                  : Role Inserted........!
+2022-10-12 21:39:33.328  INFO [nio-9000-exec-2] c.e.d.c.RoleController                   : Role Data Operation Completed....!
+2022-10-12 21:39:33.341 DEBUG [nio-9000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-10-12 21:39:33.342 DEBUG [nio-9000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Role Added"]
+2022-10-12 21:39:33.353 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-12 21:39:45.725 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : POST "/add", parameters={}
+2022-10-12 21:39:45.726 DEBUG [nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.RoleController#addRoleData(Role)
+2022-10-12 21:39:45.727 DEBUG [nio-9000-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Role(rid=2, roleType=owner)]
+2022-10-12 21:39:45.727  INFO [nio-9000-exec-3] c.e.d.c.RoleController                   : Check Role Data : Role(rid=2, roleType=owner)
+2022-10-12 21:39:45.728  INFO [nio-9000-exec-3] c.e.d.s.RoleServiceImpl                  : Role Inserting........!
+2022-10-12 21:39:45.731  INFO [nio-9000-exec-3] c.e.d.s.RoleServiceImpl                  : Role Inserted........!
+2022-10-12 21:39:45.732  INFO [nio-9000-exec-3] c.e.d.c.RoleController                   : Role Data Operation Completed....!
+2022-10-12 21:39:45.735 DEBUG [nio-9000-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-10-12 21:39:45.735 DEBUG [nio-9000-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Role Added"]
+2022-10-12 21:39:45.737 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-12 21:40:02.204 DEBUG [nio-9000-exec-4] o.s.w.s.DispatcherServlet                : POST "/add", parameters={}
+2022-10-12 21:40:02.205 DEBUG [nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.RoleController#addRoleData(Role)
+2022-10-12 21:40:02.206 DEBUG [nio-9000-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Role(rid=3, roleType=tenant)]
+2022-10-12 21:40:02.206  INFO [nio-9000-exec-4] c.e.d.c.RoleController                   : Check Role Data : Role(rid=3, roleType=tenant)
+2022-10-12 21:40:02.207  INFO [nio-9000-exec-4] c.e.d.s.RoleServiceImpl                  : Role Inserting........!
+2022-10-12 21:40:02.228  INFO [nio-9000-exec-4] c.e.d.s.RoleServiceImpl                  : Role Inserted........!
+2022-10-12 21:40:02.231  INFO [nio-9000-exec-4] c.e.d.c.RoleController                   : Role Data Operation Completed....!
+2022-10-12 21:40:02.232 DEBUG [nio-9000-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-10-12 21:40:02.232 DEBUG [nio-9000-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Role Added"]
+2022-10-12 21:40:02.234 DEBUG [nio-9000-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-12 21:40:11.949 DEBUG [nio-9000-exec-5] o.s.w.s.DispatcherServlet                : POST "/add", parameters={}
+2022-10-12 21:40:11.950 DEBUG [nio-9000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.RoleController#addRoleData(Role)
+2022-10-12 21:40:11.951 DEBUG [nio-9000-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Role(rid=3, roleType=security)]
+2022-10-12 21:40:11.951  INFO [nio-9000-exec-5] c.e.d.c.RoleController                   : Check Role Data : Role(rid=3, roleType=security)
+2022-10-12 21:40:11.951  INFO [nio-9000-exec-5] c.e.d.s.RoleServiceImpl                  : Role Inserting........!
+2022-10-12 21:40:11.980  INFO [nio-9000-exec-5] c.e.d.s.RoleServiceImpl                  : Role Inserted........!
+2022-10-12 21:40:11.980  INFO [nio-9000-exec-5] c.e.d.c.RoleController                   : Role Data Operation Completed....!
+2022-10-12 21:40:11.981 DEBUG [nio-9000-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-10-12 21:40:11.981 DEBUG [nio-9000-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Role Added"]
+2022-10-12 21:40:11.982 DEBUG [nio-9000-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-12 21:40:34.263 DEBUG [nio-9000-exec-6] o.s.w.s.DispatcherServlet                : POST "/add", parameters={}
+2022-10-12 21:40:34.264 DEBUG [nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.RoleController#addRoleData(Role)
+2022-10-12 21:40:34.265 DEBUG [nio-9000-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Role(rid=4, roleType=tenant)]
+2022-10-12 21:40:34.266  INFO [nio-9000-exec-6] c.e.d.c.RoleController                   : Check Role Data : Role(rid=4, roleType=tenant)
+2022-10-12 21:40:34.266  INFO [nio-9000-exec-6] c.e.d.s.RoleServiceImpl                  : Role Inserting........!
+2022-10-12 21:40:34.274  INFO [nio-9000-exec-6] c.e.d.s.RoleServiceImpl                  : Role Inserted........!
+2022-10-12 21:40:34.274  INFO [nio-9000-exec-6] c.e.d.c.RoleController                   : Role Data Operation Completed....!
+2022-10-12 21:40:34.275 DEBUG [nio-9000-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-10-12 21:40:34.275 DEBUG [nio-9000-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Role Added"]
+2022-10-12 21:40:34.277 DEBUG [nio-9000-exec-6] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-12 21:40:50.397 DEBUG [nio-9000-exec-7] o.s.w.s.DispatcherServlet                : POST "/add", parameters={}
+2022-10-12 21:40:50.397 DEBUG [nio-9000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.RoleController#addRoleData(Role)
+2022-10-12 21:40:50.398 DEBUG [nio-9000-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Role(rid=5, roleType=user)]
+2022-10-12 21:40:50.399  INFO [nio-9000-exec-7] c.e.d.c.RoleController                   : Check Role Data : Role(rid=5, roleType=user)
+2022-10-12 21:40:50.400  INFO [nio-9000-exec-7] c.e.d.s.RoleServiceImpl                  : Role Inserting........!
+2022-10-12 21:40:50.406  INFO [nio-9000-exec-7] c.e.d.s.RoleServiceImpl                  : Role Inserted........!
+2022-10-12 21:40:50.406  INFO [nio-9000-exec-7] c.e.d.c.RoleController                   : Role Data Operation Completed....!
+2022-10-12 21:40:50.407 DEBUG [nio-9000-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-10-12 21:40:50.407 DEBUG [nio-9000-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Role Added"]
+2022-10-12 21:40:50.409 DEBUG [nio-9000-exec-7] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-12 21:44:29.288 DEBUG [io-9000-exec-10] o.s.w.s.DispatcherServlet                : POST "/insert", parameters={}
+2022-10-12 21:44:29.288 DEBUG [io-9000-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#inserData(Login)
+2022-10-12 21:44:29.312 DEBUG [io-9000-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Login(lid=1, uname=admin, pass=admin, isActive=false, security=null, admin=Admin(aid=1, aname=null,  (truncated)...]
+2022-10-12 21:44:29.313  INFO [io-9000-exec-10] c.e.d.c.LoginController                  : Login Data : Login(lid=1, uname=admin, pass=admin, isActive=false, security=null, admin=Admin(aid=1, aname=null, address=Unknown, contactNo=0123456789, emailId=anonyomus@gamil.com, aadharNo=98765431234, panNo=QWTY1234, role=Role(rid=1, roleType=admin)), owner=null, tenant=null)
+2022-10-12 21:44:29.313  INFO [io-9000-exec-10] c.e.d.s.LoginServiceImpl                 : Login Data In Login Service : Login(lid=1, uname=admin, pass=admin, isActive=false, security=null, admin=Admin(aid=1, aname=null, address=Unknown, contactNo=0123456789, emailId=anonyomus@gamil.com, aadharNo=98765431234, panNo=QWTY1234, role=Role(rid=1, roleType=admin)), owner=null, tenant=null)
+2022-10-12 21:44:29.354  INFO [io-9000-exec-10] c.e.d.s.LoginServiceImpl                 : Logi Data Inserted...!
+2022-10-12 21:44:29.354  INFO [io-9000-exec-10] c.e.d.c.LoginController                  : Insert Login Data Operation Completed...!
+2022-10-12 21:44:29.355 DEBUG [io-9000-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-10-12 21:44:29.355 DEBUG [io-9000-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Data Inserted"]
+2022-10-12 21:44:29.356 DEBUG [io-9000-exec-10] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-12 21:45:19.494 DEBUG [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : POST "/insert", parameters={}
+2022-10-12 21:45:19.495 DEBUG [nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#inserData(Login)
+2022-10-12 21:45:19.499 DEBUG [nio-9000-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Login(lid=1, uname=admin, pass=admin, isActive=false, security=null, admin=Admin(aid=1, aname=Anonym (truncated)...]
+2022-10-12 21:45:19.500  INFO [nio-9000-exec-1] c.e.d.c.LoginController                  : Login Data : Login(lid=1, uname=admin, pass=admin, isActive=false, security=null, admin=Admin(aid=1, aname=Anonymous, address=AnyWhere, contactNo=0123456789, emailId=anonyomus@gamil.com, aadharNo=98765431234, panNo=QWTY1234, role=Role(rid=1, roleType=admin)), owner=null, tenant=null)
+2022-10-12 21:45:19.500  INFO [nio-9000-exec-1] c.e.d.s.LoginServiceImpl                 : Login Data In Login Service : Login(lid=1, uname=admin, pass=admin, isActive=false, security=null, admin=Admin(aid=1, aname=Anonymous, address=AnyWhere, contactNo=0123456789, emailId=anonyomus@gamil.com, aadharNo=98765431234, panNo=QWTY1234, role=Role(rid=1, roleType=admin)), owner=null, tenant=null)
+2022-10-12 21:45:19.512  INFO [nio-9000-exec-1] c.e.d.s.LoginServiceImpl                 : Logi Data Inserted...!
+2022-10-12 21:45:19.512  INFO [nio-9000-exec-1] c.e.d.c.LoginController                  : Insert Login Data Operation Completed...!
+2022-10-12 21:45:19.514 DEBUG [nio-9000-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-10-12 21:45:19.516 DEBUG [nio-9000-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Data Inserted"]
+2022-10-12 21:45:19.518 DEBUG [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-12 21:48:48.402  INFO [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-12 21:48:48.902  INFO [on(2)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-9000"]
+2022-10-12 21:48:48.902  INFO [on(2)-127.0.0.1] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-10-12 21:48:48.906  INFO [on(2)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-10-12 21:48:48.912  INFO [on(2)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-9000"]
+2022-10-12 21:48:48.916  INFO [on(2)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-9000"]
+2022-10-12 21:48:48.928  INFO [on(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-12 21:48:48.934  INFO [on(2)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2022-10-12 21:48:48.944  INFO [on(2)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2022-10-13 08:23:27.029  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Starting SocietyManagementSystemApplication using Java 1.8.0_261 on DESKTOP-KLAODV1 with PID 8020 (E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem\target\classes started by Anonymous in E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem)
+2022-10-13 08:23:27.071 DEBUG [  restartedMain] c.e.d.SocietyManagementSystemApplication : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-13 08:23:27.073  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 08:23:27.346  INFO [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 08:23:29.071  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-13 08:23:29.289  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 191 ms. Found 7 JPA repository interfaces.
+2022-10-13 08:23:30.808  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2022-10-13 08:23:30.837  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:23:30.838  INFO [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-10-13 08:23:30.839  INFO [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 08:23:31.048  INFO [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-10-13 08:23:31.048  INFO [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3698 ms
+2022-10-13 08:23:31.096 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-13 08:23:31.098 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-10-13 08:23:31.688  INFO [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-13 08:23:31.985  INFO [  restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-13 08:23:32.270  INFO [  restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-13 08:23:32.513  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-10-13 08:23:33.005  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-10-13 08:23:33.026  INFO [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-10-13 08:23:36.275  INFO [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-13 08:23:36.297  INFO [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:23:37.101  WARN [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-13 08:23:37.452 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-13 08:23:37.574 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2022-10-13 08:23:37.626 DEBUG [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-13 08:23:37.644 DEBUG [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-13 08:23:38.050  INFO [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 08:23:38.089  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:23:38.161  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2022-10-13 08:23:38.181  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Started SocietyManagementSystemApplication in 12.059 seconds (JVM running for 15.793)
+2022-10-13 08:26:45.281  INFO [nio-9000-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 08:26:45.282  INFO [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-10-13 08:26:45.282 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2022-10-13 08:26:45.282 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected AcceptHeaderLocaleResolver
+2022-10-13 08:26:45.282 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2022-10-13 08:26:45.284 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@149ef006
+2022-10-13 08:26:45.285 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@445144e9
+2022-10-13 08:26:45.285 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-13 08:26:45.286  INFO [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2022-10-13 08:26:45.301 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : POST "/insert", parameters={}
+2022-10-13 08:26:45.313 DEBUG [nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#inserData(Login)
+2022-10-13 08:26:45.523 DEBUG [nio-9000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Login(lid=212, uname=ajas, pass=ajas, isActive=false, security=null, admin=null, owner=Owner(oid=23, (truncated)...]
+2022-10-13 08:26:45.537  INFO [nio-9000-exec-2] c.e.d.c.LoginController                  : Login Data : Login(lid=212, uname=ajas, pass=ajas, isActive=false, security=null, admin=null, owner=Owner(oid=23, oname=Ajas Shaikh, oaddress=Pune, ocontactNo=9876543210, oemailId=ajas@gamil.com, oaadharNo=98762345765, opanNo=AASDW1234, role=Role(rid=2, roleType=owner)), tenant=null)
+2022-10-13 08:26:45.537  INFO [nio-9000-exec-2] c.e.d.s.LoginServiceImpl                 : Login Data In Login Service : Login(lid=212, uname=ajas, pass=ajas, isActive=false, security=null, admin=null, owner=Owner(oid=23, oname=Ajas Shaikh, oaddress=Pune, ocontactNo=9876543210, oemailId=ajas@gamil.com, oaadharNo=98762345765, opanNo=AASDW1234, role=Role(rid=2, roleType=owner)), tenant=null)
+2022-10-13 08:26:46.399  INFO [nio-9000-exec-2] c.e.d.s.LoginServiceImpl                 : Logi Data Inserted...!
+2022-10-13 08:26:46.399  INFO [nio-9000-exec-2] c.e.d.c.LoginController                  : Insert Login Data Operation Completed...!
+2022-10-13 08:26:46.432 DEBUG [nio-9000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:26:46.433 DEBUG [nio-9000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Data Inserted"]
+2022-10-13 08:26:46.450 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:30:01.855 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : GET "/login?uname=admin&pass=admin", parameters={masked}
+2022-10-13 08:30:01.856 DEBUG [nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#getLoginData(String, String)
+2022-10-13 08:30:01.905  INFO [nio-9000-exec-3] c.e.d.c.LoginController                  : Login Process Start : admin admin
+2022-10-13 08:30:01.905  INFO [nio-9000-exec-3] c.e.d.s.LoginServiceImpl                 : Login Credentials : admin admin
+2022-10-13 08:30:02.185 DEBUG [nio-9000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:30:02.185 DEBUG [nio-9000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Login(lid=1, uname=admin, pass=admin, isActive=true, security=null, admin=Admin(aid=1, aname=Anonymo (truncated)...]
+2022-10-13 08:30:02.216 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:30:17.300 DEBUG [nio-9000-exec-6] o.s.w.s.DispatcherServlet                : GET "/login?uname=ajas&pass=ajas", parameters={masked}
+2022-10-13 08:30:17.301 DEBUG [nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#getLoginData(String, String)
+2022-10-13 08:30:17.301  INFO [nio-9000-exec-6] c.e.d.c.LoginController                  : Login Process Start : ajas ajas
+2022-10-13 08:30:17.301  INFO [nio-9000-exec-6] c.e.d.s.LoginServiceImpl                 : Login Credentials : ajas ajas
+2022-10-13 08:30:17.306 DEBUG [nio-9000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:30:17.307 DEBUG [nio-9000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Login(lid=2, uname=ajas, pass=ajas, isActive=true, security=null, admin=null, owner=Owner(oid=1, ona (truncated)...]
+2022-10-13 08:30:17.316 DEBUG [nio-9000-exec-6] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:30:50.248 DEBUG [nio-9000-exec-7] o.s.w.s.DispatcherServlet                : GET "/login?uname=ajas1&pass=ajas", parameters={masked}
+2022-10-13 08:30:50.248 DEBUG [nio-9000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#getLoginData(String, String)
+2022-10-13 08:30:50.251  INFO [nio-9000-exec-7] c.e.d.c.LoginController                  : Login Process Start : ajas1 ajas
+2022-10-13 08:30:50.252  INFO [nio-9000-exec-7] c.e.d.s.LoginServiceImpl                 : Login Credentials : ajas1 ajas
+2022-10-13 08:30:50.258 ERROR [nio-9000-exec-7] c.e.d.s.LoginServiceImpl                 : Invalid Username and Password...!
+2022-10-13 08:30:50.260 DEBUG [nio-9000-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.demo.exception.ExceptionHandlerController#handlingExaception(ResouceNotFoundException, HttpServletRequest)
+2022-10-13 08:30:50.266 DEBUG [nio-9000-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:30:50.267 DEBUG [nio-9000-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [ExceptionResponse(msg=Invalid Username and Password...!, url=/login)]
+2022-10-13 08:30:50.274  WARN [nio-9000-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.demo.exception.ResouceNotFoundException: Invalid Username and Password...!]
+2022-10-13 08:30:50.275 DEBUG [nio-9000-exec-7] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:31:51.263  INFO [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-13 08:31:52.289  INFO [       Thread-6] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:31:52.290  INFO [       Thread-6] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-10-13 08:31:52.294  INFO [       Thread-6] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-10-13 08:31:52.305  INFO [       Thread-6] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:31:52.310  INFO [       Thread-6] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:31:52.324  INFO [       Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:31:52.334  INFO [       Thread-6] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2022-10-13 08:31:52.348  INFO [       Thread-6] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2022-10-13 08:31:53.178  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Starting SocietyManagementSystemApplication using Java 1.8.0_261 on DESKTOP-KLAODV1 with PID 8020 (E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem\target\classes started by Anonymous in E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem)
+2022-10-13 08:31:53.180 DEBUG [  restartedMain] c.e.d.SocietyManagementSystemApplication : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-13 08:31:53.181  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 08:31:53.976  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-13 08:31:54.091  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 7 JPA repository interfaces.
+2022-10-13 08:31:54.577  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2022-10-13 08:31:54.579  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:31:54.579  INFO [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-10-13 08:31:54.581  INFO [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 08:31:54.646  INFO [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-10-13 08:31:54.646  INFO [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1456 ms
+2022-10-13 08:31:55.057 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-13 08:31:55.058 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-10-13 08:31:55.966  INFO [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-13 08:31:55.978  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2022-10-13 08:31:55.986  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2022-10-13 08:31:55.987  INFO [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-10-13 08:31:57.472  INFO [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-13 08:31:57.473  INFO [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:31:57.750  WARN [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-13 08:31:57.828 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-13 08:31:57.862 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2022-10-13 08:31:57.888 DEBUG [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-13 08:31:57.902 DEBUG [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-13 08:31:58.175  INFO [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 08:31:58.194  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:31:58.200  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2022-10-13 08:31:58.210  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Started SocietyManagementSystemApplication in 5.267 seconds (JVM running for 515.815)
+2022-10-13 08:31:58.214  INFO [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-13 08:32:08.906  INFO [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-13 08:32:09.789  INFO [       Thread-8] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:32:09.790  INFO [       Thread-8] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-10-13 08:32:09.796  INFO [       Thread-8] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:32:09.800  INFO [       Thread-8] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:32:09.808  INFO [       Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:32:09.809  INFO [       Thread-8] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2022-10-13 08:32:09.815  INFO [       Thread-8] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2022-10-13 08:32:10.253  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Starting SocietyManagementSystemApplication using Java 1.8.0_261 on DESKTOP-KLAODV1 with PID 8020 (E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem\target\classes started by Anonymous in E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem)
+2022-10-13 08:32:10.255 DEBUG [  restartedMain] c.e.d.SocietyManagementSystemApplication : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-13 08:32:10.255  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 08:32:11.126  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-13 08:32:11.220  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 7 JPA repository interfaces.
+2022-10-13 08:32:11.754  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2022-10-13 08:32:11.756  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:32:11.756  INFO [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-10-13 08:32:11.757  INFO [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 08:32:11.820  INFO [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-10-13 08:32:11.820  INFO [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1561 ms
+2022-10-13 08:32:11.837 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-13 08:32:11.837 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-10-13 08:32:12.001  INFO [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-13 08:32:12.026  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2022-10-13 08:32:12.042  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2022-10-13 08:32:12.043  INFO [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-10-13 08:32:13.113  INFO [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-13 08:32:13.116  INFO [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:32:13.499  WARN [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-13 08:32:13.635 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-13 08:32:13.668 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2022-10-13 08:32:13.688 DEBUG [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-13 08:32:13.706 DEBUG [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-13 08:32:14.025  INFO [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 08:32:14.046  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:32:14.051  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2022-10-13 08:32:14.059  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Started SocietyManagementSystemApplication in 3.896 seconds (JVM running for 531.663)
+2022-10-13 08:32:14.061  INFO [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-13 08:32:15.466  INFO [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-13 08:32:15.857  INFO [      Thread-12] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:32:15.857  INFO [      Thread-12] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-10-13 08:32:15.870  INFO [      Thread-12] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:32:15.942  INFO [      Thread-12] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:32:15.952  INFO [      Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:32:15.957  INFO [      Thread-12] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2022-10-13 08:32:15.978  INFO [      Thread-12] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2022-10-13 08:32:16.584  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Starting SocietyManagementSystemApplication using Java 1.8.0_261 on DESKTOP-KLAODV1 with PID 8020 (E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem\target\classes started by Anonymous in E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem)
+2022-10-13 08:32:16.585 DEBUG [  restartedMain] c.e.d.SocietyManagementSystemApplication : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-13 08:32:16.585  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 08:32:16.929  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-13 08:32:16.986  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 7 JPA repository interfaces.
+2022-10-13 08:32:17.145  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2022-10-13 08:32:17.147  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:32:17.148  INFO [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-10-13 08:32:17.149  INFO [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 08:32:17.190  INFO [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-10-13 08:32:17.191  INFO [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 602 ms
+2022-10-13 08:32:17.208 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-13 08:32:17.208 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-10-13 08:32:17.257  INFO [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-13 08:32:17.267  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Starting...
+2022-10-13 08:32:17.274  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Start completed.
+2022-10-13 08:32:17.274  INFO [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-10-13 08:32:18.371  INFO [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-13 08:32:18.372  INFO [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:32:18.571  WARN [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-13 08:32:18.631 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-13 08:32:18.653 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2022-10-13 08:32:18.667 DEBUG [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-13 08:32:18.676 DEBUG [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-13 08:32:18.901  INFO [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 08:32:18.919  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:32:18.925  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2022-10-13 08:32:18.936  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Started SocietyManagementSystemApplication in 2.444 seconds (JVM running for 536.54)
+2022-10-13 08:32:18.939  INFO [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-13 08:32:29.627  INFO [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-13 08:32:30.200  INFO [      Thread-16] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:32:30.200  INFO [      Thread-16] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-10-13 08:32:30.209  INFO [      Thread-16] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:32:30.212  INFO [      Thread-16] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:32:30.218  INFO [      Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:32:30.219  INFO [      Thread-16] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown initiated...
+2022-10-13 08:32:30.228  INFO [      Thread-16] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown completed.
+2022-10-13 08:32:30.602  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Starting SocietyManagementSystemApplication using Java 1.8.0_261 on DESKTOP-KLAODV1 with PID 8020 (E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem\target\classes started by Anonymous in E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem)
+2022-10-13 08:32:30.603 DEBUG [  restartedMain] c.e.d.SocietyManagementSystemApplication : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-13 08:32:30.603  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 08:32:30.944  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-13 08:32:31.006  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 7 JPA repository interfaces.
+2022-10-13 08:32:31.257  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2022-10-13 08:32:31.259  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:32:31.261  INFO [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-10-13 08:32:31.262  INFO [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 08:32:31.296  INFO [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-10-13 08:32:31.296  INFO [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 689 ms
+2022-10-13 08:32:31.310 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-13 08:32:31.311 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-10-13 08:32:31.363  INFO [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-13 08:32:31.374  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Starting...
+2022-10-13 08:32:31.382  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Start completed.
+2022-10-13 08:32:31.383  INFO [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-10-13 08:32:32.252  INFO [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-13 08:32:32.253  INFO [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:32:32.554  WARN [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-13 08:32:32.660 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-13 08:32:32.685 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2022-10-13 08:32:32.700 DEBUG [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-13 08:32:32.717 DEBUG [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-13 08:32:32.963  INFO [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 08:32:32.984  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:32:32.989  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2022-10-13 08:32:33.000  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Started SocietyManagementSystemApplication in 2.479 seconds (JVM running for 550.604)
+2022-10-13 08:32:33.005  INFO [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-13 08:32:38.618  INFO [nio-9000-exec-3] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 08:32:38.618  INFO [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-10-13 08:32:38.618 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2022-10-13 08:32:38.618 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : Detected AcceptHeaderLocaleResolver
+2022-10-13 08:32:38.618 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2022-10-13 08:32:38.619 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@53f33d34
+2022-10-13 08:32:38.620 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2efa270e
+2022-10-13 08:32:38.620 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-13 08:32:38.620  INFO [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2022-10-13 08:32:38.621 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : GET "/login?uname=ajas1&pass=ajas", parameters={masked}
+2022-10-13 08:32:38.621 DEBUG [nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#getLoginData(String, String)
+2022-10-13 08:32:38.631  INFO [nio-9000-exec-3] c.e.d.c.LoginController                  : Login Process Start : ajas1 ajas
+2022-10-13 08:32:38.632  INFO [nio-9000-exec-3] c.e.d.s.LoginServiceImpl                 : Login Credentials : ajas1 ajas
+2022-10-13 08:32:38.661 DEBUG [nio-9000-exec-3] c.e.d.s.LoginServiceImpl                 : Login Data Before : null
+2022-10-13 08:32:38.661 ERROR [nio-9000-exec-3] c.e.d.s.LoginServiceImpl                 : Invalid Username and Password...!
+2022-10-13 08:32:38.662 DEBUG [nio-9000-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.demo.exception.ExceptionHandlerController#handlingExaception(ResouceNotFoundException, HttpServletRequest)
+2022-10-13 08:32:38.666 DEBUG [nio-9000-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:32:38.666 DEBUG [nio-9000-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [ExceptionResponse(msg=Invalid Username and Password...!, url=/login)]
+2022-10-13 08:32:38.668  WARN [nio-9000-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.demo.exception.ResouceNotFoundException: Invalid Username and Password...!]
+2022-10-13 08:32:38.668 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:32:45.535 DEBUG [nio-9000-exec-4] o.s.w.s.DispatcherServlet                : GET "/login?uname=ajas&pass=ajas", parameters={masked}
+2022-10-13 08:32:45.536 DEBUG [nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#getLoginData(String, String)
+2022-10-13 08:32:45.537  INFO [nio-9000-exec-4] c.e.d.c.LoginController                  : Login Process Start : ajas ajas
+2022-10-13 08:32:45.537  INFO [nio-9000-exec-4] c.e.d.s.LoginServiceImpl                 : Login Credentials : ajas ajas
+2022-10-13 08:32:45.552 DEBUG [nio-9000-exec-4] c.e.d.s.LoginServiceImpl                 : Login Data Before : Login(lid=2, uname=ajas, pass=ajas, isActive=true, security=null, admin=null, owner=Owner(oid=1, oname=Ajas Shaikh, oaddress=Pune, ocontactNo=9876543210, oemailId=ajas@gamil.com, oaadharNo=98762345765, opanNo=AASDW1234, role=Role(rid=2, roleType=owner)), tenant=null)
+2022-10-13 08:32:45.552 DEBUG [nio-9000-exec-4] c.e.d.s.LoginServiceImpl                 : Login Data In If : Login(lid=2, uname=ajas, pass=ajas, isActive=true, security=null, admin=null, owner=Owner(oid=1, oname=Ajas Shaikh, oaddress=Pune, ocontactNo=9876543210, oemailId=ajas@gamil.com, oaadharNo=98762345765, opanNo=AASDW1234, role=Role(rid=2, roleType=owner)), tenant=null)
+2022-10-13 08:32:45.560 DEBUG [nio-9000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:32:45.560 DEBUG [nio-9000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Login(lid=2, uname=ajas, pass=ajas, isActive=true, security=null, admin=null, owner=Owner(oid=1, ona (truncated)...]
+2022-10-13 08:32:45.563 DEBUG [nio-9000-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:34:41.098  INFO [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-13 08:34:41.658  INFO [      Thread-20] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:34:41.658  INFO [      Thread-20] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-10-13 08:34:41.661  INFO [      Thread-20] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-10-13 08:34:41.670  INFO [      Thread-20] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:34:41.674  INFO [      Thread-20] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:34:41.682  INFO [      Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:34:41.683  INFO [      Thread-20] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown initiated...
+2022-10-13 08:34:41.690  INFO [      Thread-20] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown completed.
+2022-10-13 08:34:42.032  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Starting SocietyManagementSystemApplication using Java 1.8.0_261 on DESKTOP-KLAODV1 with PID 8020 (E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem\target\classes started by Anonymous in E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem)
+2022-10-13 08:34:42.033 DEBUG [  restartedMain] c.e.d.SocietyManagementSystemApplication : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-13 08:34:42.034  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 08:34:42.440  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-13 08:34:42.511  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 7 JPA repository interfaces.
+2022-10-13 08:34:42.763  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2022-10-13 08:34:42.764  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:34:42.765  INFO [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-10-13 08:34:42.765  INFO [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 08:34:42.791  INFO [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-10-13 08:34:42.791  INFO [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 752 ms
+2022-10-13 08:34:42.806 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-13 08:34:42.807 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-10-13 08:34:42.866  INFO [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-13 08:34:42.873  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Starting...
+2022-10-13 08:34:42.881  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Start completed.
+2022-10-13 08:34:42.882  INFO [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-10-13 08:34:44.522  INFO [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-13 08:34:44.523  INFO [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:34:44.721  WARN [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-13 08:34:44.787 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-13 08:34:44.822 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2022-10-13 08:34:44.839 DEBUG [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-13 08:34:44.855 DEBUG [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-13 08:34:45.113  INFO [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 08:34:45.129  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:34:45.134  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2022-10-13 08:34:45.141  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Started SocietyManagementSystemApplication in 3.19 seconds (JVM running for 682.745)
+2022-10-13 08:34:45.144  INFO [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-13 08:34:53.183  INFO [nio-9000-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 08:34:53.183  INFO [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-10-13 08:34:53.183 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2022-10-13 08:34:53.184 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected AcceptHeaderLocaleResolver
+2022-10-13 08:34:53.184 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2022-10-13 08:34:53.186 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2f55c7d9
+2022-10-13 08:34:53.187 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@24dac1f8
+2022-10-13 08:34:53.187 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-13 08:34:53.187  INFO [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2022-10-13 08:34:53.188 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : GET "/login?uname=ajas&pass=ajas", parameters={masked}
+2022-10-13 08:34:53.188 DEBUG [nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#getLoginData(String, String)
+2022-10-13 08:34:53.200  INFO [nio-9000-exec-2] c.e.d.c.LoginController                  : Login Process Start : ajas ajas
+2022-10-13 08:34:53.200  INFO [nio-9000-exec-2] c.e.d.s.LoginServiceImpl                 : Login Credentials : ajas ajas
+2022-10-13 08:34:53.239 DEBUG [nio-9000-exec-2] c.e.d.s.LoginServiceImpl                 : Login Data Before : Login(lid=2, uname=ajas, pass=ajas, isActive=true, security=null, admin=null, owner=Owner(oid=1, oname=Ajas Shaikh, oaddress=Pune, ocontactNo=9876543210, oemailId=ajas@gamil.com, oaadharNo=98762345765, opanNo=AASDW1234, role=Role(rid=2, roleType=owner)), tenant=null)
+2022-10-13 08:34:53.242 DEBUG [nio-9000-exec-2] c.e.d.s.LoginServiceImpl                 : Login Data In If : Login(lid=2, uname=ajas, pass=ajas, isActive=true, security=null, admin=null, owner=Owner(oid=1, oname=Ajas Shaikh, oaddress=Pune, ocontactNo=9876543210, oemailId=ajas@gamil.com, oaadharNo=98762345765, opanNo=AASDW1234, role=Role(rid=2, roleType=owner)), tenant=null)
+2022-10-13 08:34:53.247 DEBUG [nio-9000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:34:53.248 DEBUG [nio-9000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Login(lid=2, uname=ajas, pass=ajas, isActive=true, security=null, admin=null, owner=Owner(oid=1, ona (truncated)...]
+2022-10-13 08:34:53.252 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:35:34.583 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : GET "/login?uname=ajas&pass=ajas", parameters={masked}
+2022-10-13 08:35:34.584 DEBUG [nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#getLoginData(String, String)
+2022-10-13 08:35:34.585  INFO [nio-9000-exec-3] c.e.d.c.LoginController                  : Login Process Start : ajas ajas
+2022-10-13 08:35:34.585  INFO [nio-9000-exec-3] c.e.d.s.LoginServiceImpl                 : Login Credentials : ajas ajas
+2022-10-13 08:35:34.590 DEBUG [nio-9000-exec-3] c.e.d.s.LoginServiceImpl                 : Login Data Before : Login(lid=2, uname=ajas, pass=ajas, isActive=true, security=null, admin=null, owner=Owner(oid=1, oname=Ajas Shaikh, oaddress=Pune, ocontactNo=9876543210, oemailId=ajas@gamil.com, oaadharNo=98762345765, opanNo=AASDW1234, role=Role(rid=2, roleType=owner)), tenant=null)
+2022-10-13 08:35:34.590 DEBUG [nio-9000-exec-3] c.e.d.s.LoginServiceImpl                 : Login Data In If : Login(lid=2, uname=ajas, pass=ajas, isActive=true, security=null, admin=null, owner=Owner(oid=1, oname=Ajas Shaikh, oaddress=Pune, ocontactNo=9876543210, oemailId=ajas@gamil.com, oaadharNo=98762345765, opanNo=AASDW1234, role=Role(rid=2, roleType=owner)), tenant=null)
+2022-10-13 08:35:34.591 DEBUG [nio-9000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:35:34.591 DEBUG [nio-9000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Login(lid=2, uname=ajas, pass=ajas, isActive=true, security=null, admin=null, owner=Owner(oid=1, ona (truncated)...]
+2022-10-13 08:35:34.593 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:35:43.026 DEBUG [nio-9000-exec-4] o.s.w.s.DispatcherServlet                : GET "/login?uname=ajas&pass=ajas", parameters={masked}
+2022-10-13 08:35:43.026 DEBUG [nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#getLoginData(String, String)
+2022-10-13 08:35:43.027  INFO [nio-9000-exec-4] c.e.d.c.LoginController                  : Login Process Start : ajas ajas
+2022-10-13 08:35:43.028  INFO [nio-9000-exec-4] c.e.d.s.LoginServiceImpl                 : Login Credentials : ajas ajas
+2022-10-13 08:35:43.038 DEBUG [nio-9000-exec-4] c.e.d.s.LoginServiceImpl                 : Login Data Before : Login(lid=2, uname=ajas, pass=ajas, isActive=true, security=null, admin=null, owner=Owner(oid=1, oname=Ajas Shaikh, oaddress=Pune, ocontactNo=9876543210, oemailId=ajas@gamil.com, oaadharNo=98762345765, opanNo=AASDW1234, role=Role(rid=2, roleType=owner)), tenant=null)
+2022-10-13 08:35:43.038 DEBUG [nio-9000-exec-4] c.e.d.s.LoginServiceImpl                 : Login Data In If : Login(lid=2, uname=ajas, pass=ajas, isActive=true, security=null, admin=null, owner=Owner(oid=1, oname=Ajas Shaikh, oaddress=Pune, ocontactNo=9876543210, oemailId=ajas@gamil.com, oaadharNo=98762345765, opanNo=AASDW1234, role=Role(rid=2, roleType=owner)), tenant=null)
+2022-10-13 08:35:43.039 DEBUG [nio-9000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:35:43.039 DEBUG [nio-9000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Login(lid=2, uname=ajas, pass=ajas, isActive=true, security=null, admin=null, owner=Owner(oid=1, ona (truncated)...]
+2022-10-13 08:35:43.040 DEBUG [nio-9000-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:36:21.260  INFO [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-13 08:36:21.880  INFO [      Thread-24] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:36:21.881  INFO [      Thread-24] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-10-13 08:36:21.882  INFO [      Thread-24] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-10-13 08:36:21.888  INFO [      Thread-24] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:36:21.891  INFO [      Thread-24] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:36:21.895  INFO [      Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:36:21.896  INFO [      Thread-24] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown initiated...
+2022-10-13 08:36:21.900  INFO [      Thread-24] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown completed.
+2022-10-13 08:36:22.328  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Starting SocietyManagementSystemApplication using Java 1.8.0_261 on DESKTOP-KLAODV1 with PID 8020 (E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem\target\classes started by Anonymous in E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem)
+2022-10-13 08:36:22.330 DEBUG [  restartedMain] c.e.d.SocietyManagementSystemApplication : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-13 08:36:22.330  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 08:36:22.690  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-13 08:36:22.747  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 7 JPA repository interfaces.
+2022-10-13 08:36:22.977  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2022-10-13 08:36:22.978  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:36:22.979  INFO [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-10-13 08:36:22.979  INFO [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 08:36:23.004  INFO [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-10-13 08:36:23.005  INFO [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 672 ms
+2022-10-13 08:36:23.015 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-13 08:36:23.016 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-10-13 08:36:23.075  INFO [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-13 08:36:23.082  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Starting...
+2022-10-13 08:36:23.092  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Start completed.
+2022-10-13 08:36:23.092  INFO [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-10-13 08:36:23.954  INFO [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-13 08:36:23.955  INFO [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:36:24.234  WARN [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-13 08:36:24.316 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-13 08:36:24.341 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2022-10-13 08:36:24.358 DEBUG [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-13 08:36:24.370 DEBUG [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-13 08:36:24.614  INFO [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 08:36:24.631  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:36:24.636  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2022-10-13 08:36:24.644  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Started SocietyManagementSystemApplication in 2.413 seconds (JVM running for 782.246)
+2022-10-13 08:36:24.646  INFO [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-13 08:38:00.734  INFO [nio-9000-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 08:38:00.734  INFO [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-10-13 08:38:00.734 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2022-10-13 08:38:00.734 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected AcceptHeaderLocaleResolver
+2022-10-13 08:38:00.735 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2022-10-13 08:38:00.737 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2e714de9
+2022-10-13 08:38:00.738 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@72d2e0ae
+2022-10-13 08:38:00.739 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-13 08:38:00.739  INFO [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 5 ms
+2022-10-13 08:38:00.739 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : POST "/insertOther", parameters={}
+2022-10-13 08:38:00.739 DEBUG [nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#insertDifferntUserData(Login)
+2022-10-13 08:38:00.758 DEBUG [nio-9000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Login(lid=12, uname=abcd, pass=abcd, isActive=false, security=null, admin=null, owner=Owner(oid=43,  (truncated)...]
+2022-10-13 08:38:00.762  INFO [nio-9000-exec-2] c.e.d.c.LoginController                  : Login Different Data : Login(lid=12, uname=abcd, pass=abcd, isActive=false, security=null, admin=null, owner=Owner(oid=43, oname=Abcd, oaddress=Pune, ocontactNo=988763210, oemailId=pqrs@gamil.com, oaadharNo=9875645765, opanNo=OISDW1234, role=Role(rid=4, roleType=tenant)), tenant=null)
+2022-10-13 08:38:00.762  INFO [nio-9000-exec-2] c.e.d.s.LoginServiceImpl                 : Different user Data In Login Service : Login(lid=12, uname=abcd, pass=abcd, isActive=false, security=null, admin=null, owner=Owner(oid=43, oname=Abcd, oaddress=Pune, ocontactNo=988763210, oemailId=pqrs@gamil.com, oaadharNo=9875645765, opanNo=OISDW1234, role=Role(rid=4, roleType=tenant)), tenant=null)
+2022-10-13 08:38:00.762  INFO [nio-9000-exec-2] c.e.d.s.LoginServiceImpl                 : Check Data : Login(lid=12, uname=abcd, pass=abcd, isActive=false, security=null, admin=null, owner=Owner(oid=43, oname=Abcd, oaddress=Pune, ocontactNo=988763210, oemailId=pqrs@gamil.com, oaadharNo=9875645765, opanNo=OISDW1234, role=Role(rid=4, roleType=tenant)), tenant=null)
+2022-10-13 08:38:00.821  INFO [nio-9000-exec-2] c.e.d.s.LoginServiceImpl                 : User Data Inserted...!
+2022-10-13 08:38:00.822  INFO [nio-9000-exec-2] c.e.d.c.LoginController                  : Insert Different Login Data Operation Completed...!
+2022-10-13 08:38:00.822 DEBUG [nio-9000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:38:00.822 DEBUG [nio-9000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Data Inserted"]
+2022-10-13 08:38:00.824 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:39:46.629 DEBUG [nio-9000-exec-6] o.s.w.s.DispatcherServlet                : POST "/insertOther", parameters={}
+2022-10-13 08:39:46.630 DEBUG [nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#insertDifferntUserData(Login)
+2022-10-13 08:39:46.632 DEBUG [nio-9000-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Login(lid=125, uname=abcd, pass=abcd, isActive=false, security=null, admin=null, owner=null, tenant= (truncated)...]
+2022-10-13 08:39:46.632  INFO [nio-9000-exec-6] c.e.d.c.LoginController                  : Login Different Data : Login(lid=125, uname=abcd, pass=abcd, isActive=false, security=null, admin=null, owner=null, tenant=Tenant(tid=423, tname=Ajas Shaikh, taddress=Pune, tcontactNo=78988783210, temailId=ajas@gamil.com, taadharNo=99875645765, tpanNo=OISDW1234, role=Role(rid=4, roleType=tenant)))
+2022-10-13 08:39:46.632  INFO [nio-9000-exec-6] c.e.d.s.LoginServiceImpl                 : Different user Data In Login Service : Login(lid=125, uname=abcd, pass=abcd, isActive=false, security=null, admin=null, owner=null, tenant=Tenant(tid=423, tname=Ajas Shaikh, taddress=Pune, tcontactNo=78988783210, temailId=ajas@gamil.com, taadharNo=99875645765, tpanNo=OISDW1234, role=Role(rid=4, roleType=tenant)))
+2022-10-13 08:39:46.637  INFO [nio-9000-exec-6] c.e.d.s.LoginServiceImpl                 : Check Data : Login(lid=125, uname=abcd, pass=abcd, isActive=false, security=null, admin=null, owner=null, tenant=Tenant(tid=423, tname=Ajas Shaikh, taddress=Pune, tcontactNo=78988783210, temailId=ajas@gamil.com, taadharNo=99875645765, tpanNo=OISDW1234, role=Role(rid=4, roleType=tenant)))
+2022-10-13 08:39:46.652  INFO [nio-9000-exec-6] c.e.d.s.LoginServiceImpl                 : User Data Inserted...!
+2022-10-13 08:39:46.652  INFO [nio-9000-exec-6] c.e.d.c.LoginController                  : Insert Different Login Data Operation Completed...!
+2022-10-13 08:39:46.653 DEBUG [nio-9000-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:39:46.654 DEBUG [nio-9000-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Data Inserted"]
+2022-10-13 08:39:46.655 DEBUG [nio-9000-exec-6] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:43:09.854 DEBUG [nio-9000-exec-8] o.s.w.s.DispatcherServlet                : GET "/login?uname=abcd&pass=abcd", parameters={masked}
+2022-10-13 08:43:09.855 DEBUG [nio-9000-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#getLoginData(String, String)
+2022-10-13 08:43:09.861  INFO [nio-9000-exec-8] c.e.d.c.LoginController                  : Login Process Start : abcd abcd
+2022-10-13 08:43:09.861  INFO [nio-9000-exec-8] c.e.d.s.LoginServiceImpl                 : Login Credentials : abcd abcd
+2022-10-13 08:43:09.874 DEBUG [nio-9000-exec-8] c.e.d.s.LoginServiceImpl                 : Login Data Before : Login(lid=4, uname=abcd, pass=abcd, isActive=false, security=null, admin=null, owner=null, tenant=Tenant(tid=1, tname=Ajas Shaikh, taddress=Pune, tcontactNo=78988783210, temailId=ajas@gamil.com, taadharNo=99875645765, tpanNo=OISDW1234, role=Role(rid=4, roleType=tenant)))
+2022-10-13 08:43:09.874 ERROR [nio-9000-exec-8] c.e.d.s.LoginServiceImpl                 : Invalid Username and Password...!
+2022-10-13 08:43:09.874 DEBUG [nio-9000-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.demo.exception.ExceptionHandlerController#handlingExaception(ResouceNotFoundException, HttpServletRequest)
+2022-10-13 08:43:09.877 DEBUG [nio-9000-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:43:09.877 DEBUG [nio-9000-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [ExceptionResponse(msg=Invalid Username and Password...!, url=/login)]
+2022-10-13 08:43:09.879  WARN [nio-9000-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.demo.exception.ResouceNotFoundException: Invalid Username and Password...!]
+2022-10-13 08:43:09.879 DEBUG [nio-9000-exec-8] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:44:20.229  INFO [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-13 08:44:20.773  INFO [      Thread-28] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:44:20.773  INFO [      Thread-28] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-10-13 08:44:20.775  INFO [      Thread-28] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-10-13 08:44:20.782  INFO [      Thread-28] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:44:20.785  INFO [      Thread-28] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:44:20.788  INFO [      Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:44:20.789  INFO [      Thread-28] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown initiated...
+2022-10-13 08:44:20.794  INFO [      Thread-28] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown completed.
+2022-10-13 08:44:21.199  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Starting SocietyManagementSystemApplication using Java 1.8.0_261 on DESKTOP-KLAODV1 with PID 8020 (E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem\target\classes started by Anonymous in E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem)
+2022-10-13 08:44:21.200 DEBUG [  restartedMain] c.e.d.SocietyManagementSystemApplication : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-13 08:44:21.200  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 08:44:21.540  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-13 08:44:21.591  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 7 JPA repository interfaces.
+2022-10-13 08:44:21.813  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2022-10-13 08:44:21.814  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:44:21.815  INFO [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-10-13 08:44:21.815  INFO [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 08:44:21.838  INFO [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-10-13 08:44:21.838  INFO [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 635 ms
+2022-10-13 08:44:21.848 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-13 08:44:21.848 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-10-13 08:44:21.890  INFO [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-13 08:44:21.897  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Starting...
+2022-10-13 08:44:21.905  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Start completed.
+2022-10-13 08:44:21.906  INFO [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-10-13 08:44:22.786  INFO [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-13 08:44:22.786  INFO [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:44:23.039  WARN [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-13 08:44:23.208 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-13 08:44:23.242 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2022-10-13 08:44:23.277 DEBUG [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-13 08:44:23.296 DEBUG [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-13 08:44:23.666  INFO [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 08:44:23.689  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:44:23.695  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2022-10-13 08:44:23.704  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Started SocietyManagementSystemApplication in 2.586 seconds (JVM running for 1261.301)
+2022-10-13 08:44:23.706  INFO [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-13 08:44:26.222  INFO [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-13 08:44:27.214  INFO [      Thread-32] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:44:27.215  INFO [      Thread-32] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-10-13 08:44:27.222  INFO [      Thread-32] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:44:27.225  INFO [      Thread-32] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:44:27.228  INFO [      Thread-32] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:44:27.229  INFO [      Thread-32] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown initiated...
+2022-10-13 08:44:27.234  INFO [      Thread-32] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown completed.
+2022-10-13 08:44:27.739  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Starting SocietyManagementSystemApplication using Java 1.8.0_261 on DESKTOP-KLAODV1 with PID 8020 (E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem\target\classes started by Anonymous in E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem)
+2022-10-13 08:44:27.741 DEBUG [  restartedMain] c.e.d.SocietyManagementSystemApplication : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-13 08:44:27.741  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 08:44:28.063  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-13 08:44:28.118  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 7 JPA repository interfaces.
+2022-10-13 08:44:28.270  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2022-10-13 08:44:28.271  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:44:28.272  INFO [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-10-13 08:44:28.272  INFO [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 08:44:28.303  INFO [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-10-13 08:44:28.303  INFO [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 559 ms
+2022-10-13 08:44:28.314 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-13 08:44:28.314 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-10-13 08:44:28.373  INFO [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-13 08:44:28.378  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Starting...
+2022-10-13 08:44:28.386  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Start completed.
+2022-10-13 08:44:28.387  INFO [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-10-13 08:44:29.335  INFO [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-13 08:44:29.335  INFO [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:44:29.526  WARN [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-13 08:44:29.584 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-13 08:44:29.604 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2022-10-13 08:44:29.616 DEBUG [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-13 08:44:29.625 DEBUG [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-13 08:44:29.838  INFO [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 08:44:29.866  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:44:29.871  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2022-10-13 08:44:29.879  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Started SocietyManagementSystemApplication in 2.226 seconds (JVM running for 1267.476)
+2022-10-13 08:44:29.881  INFO [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-13 08:45:25.708  INFO [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-13 08:45:26.220  INFO [      Thread-36] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:45:26.220  INFO [      Thread-36] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-10-13 08:45:26.227  INFO [      Thread-36] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:45:26.229  INFO [      Thread-36] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:45:26.233  INFO [      Thread-36] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:45:26.234  INFO [      Thread-36] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown initiated...
+2022-10-13 08:45:26.237  INFO [      Thread-36] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown completed.
+2022-10-13 08:45:26.562  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Starting SocietyManagementSystemApplication using Java 1.8.0_261 on DESKTOP-KLAODV1 with PID 8020 (E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem\target\classes started by Anonymous in E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem)
+2022-10-13 08:45:26.563 DEBUG [  restartedMain] c.e.d.SocietyManagementSystemApplication : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-13 08:45:26.564  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 08:45:26.916  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-13 08:45:26.980  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 7 JPA repository interfaces.
+2022-10-13 08:45:27.220  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2022-10-13 08:45:27.221  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:45:27.221  INFO [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-10-13 08:45:27.221  INFO [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 08:45:27.249  INFO [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-10-13 08:45:27.249  INFO [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 681 ms
+2022-10-13 08:45:27.261 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-13 08:45:27.262 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-10-13 08:45:27.313  INFO [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-13 08:45:27.319  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Starting...
+2022-10-13 08:45:27.326  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Start completed.
+2022-10-13 08:45:27.326  INFO [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-10-13 08:45:28.333  INFO [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-13 08:45:28.333  INFO [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:45:28.738  WARN [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-13 08:45:28.814 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-13 08:45:28.838 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2022-10-13 08:45:28.855 DEBUG [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-13 08:45:28.871 DEBUG [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-13 08:45:29.244  INFO [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 08:45:29.264  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:45:29.270  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2022-10-13 08:45:29.280  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Started SocietyManagementSystemApplication in 2.82 seconds (JVM running for 1326.876)
+2022-10-13 08:45:29.283  INFO [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-13 08:45:33.092  INFO [nio-9000-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 08:45:33.092  INFO [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-10-13 08:45:33.092 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2022-10-13 08:45:33.092 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected AcceptHeaderLocaleResolver
+2022-10-13 08:45:33.092 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2022-10-13 08:45:33.093 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7f46bf57
+2022-10-13 08:45:33.094 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2bfd2baa
+2022-10-13 08:45:33.094 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-13 08:45:33.094  INFO [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2022-10-13 08:45:33.094 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : GET "/login?uname=abcd&pass=abcd", parameters={masked}
+2022-10-13 08:45:33.094 DEBUG [nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#getLoginData(String, String)
+2022-10-13 08:45:33.103  INFO [nio-9000-exec-2] c.e.d.c.LoginController                  : Login Process Start : abcd abcd
+2022-10-13 08:45:33.103  INFO [nio-9000-exec-2] c.e.d.s.LoginServiceImpl                 : Login Credentials : abcd abcd
+2022-10-13 08:45:33.143 DEBUG [nio-9000-exec-2] c.e.d.s.LoginServiceImpl                 : Login Data Before : Login(lid=4, uname=abcd, pass=abcd, isActive=false, security=null, admin=null, owner=null, tenant=Tenant(tid=1, tname=Ajas Shaikh, taddress=Pune, tcontactNo=78988783210, temailId=ajas@gamil.com, taadharNo=99875645765, tpanNo=OISDW1234, role=Role(rid=4, roleType=tenant)))
+2022-10-13 08:45:33.143 ERROR [nio-9000-exec-2] c.e.d.s.LoginServiceImpl                 : Pls Contact Your Admin...!
+2022-10-13 08:45:33.144 DEBUG [nio-9000-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.demo.exception.ExceptionHandlerController#handlingExaception(ResouceNotFoundException, HttpServletRequest)
+2022-10-13 08:45:33.147 DEBUG [nio-9000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:45:33.147 DEBUG [nio-9000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [ExceptionResponse(msg=Pls Contact Your Admin...!, url=/login)]
+2022-10-13 08:45:33.149  WARN [nio-9000-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.demo.exception.ResouceNotFoundException: Pls Contact Your Admin...!]
+2022-10-13 08:45:33.150 DEBUG [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:45:44.647 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : GET "/login?uname=abcd1&pass=abcd", parameters={masked}
+2022-10-13 08:45:44.647 DEBUG [nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#getLoginData(String, String)
+2022-10-13 08:45:44.648  INFO [nio-9000-exec-3] c.e.d.c.LoginController                  : Login Process Start : abcd1 abcd
+2022-10-13 08:45:44.649  INFO [nio-9000-exec-3] c.e.d.s.LoginServiceImpl                 : Login Credentials : abcd1 abcd
+2022-10-13 08:45:44.651 DEBUG [nio-9000-exec-3] c.e.d.s.LoginServiceImpl                 : Login Data Before : null
+2022-10-13 08:45:44.664 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : Failed to complete request: java.lang.NullPointerException
+2022-10-13 08:45:44.666 ERROR [nio-9000-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+	at com.example.demo.serviceImpl.LoginServiceImpl.getLoginData(LoginServiceImpl.java:40)
+	at com.example.demo.controller.LoginController.getLoginData(LoginController.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2022-10-13 08:45:44.675 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error?uname=abcd1&pass=abcd", parameters={masked}
+2022-10-13 08:45:44.679 DEBUG [nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-10-13 08:45:44.697 DEBUG [nio-9000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:45:44.698 DEBUG [nio-9000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Oct 13 08:45:44 IST 2022, status=500, error=Internal Server Error, trace=java.lang.Nu (truncated)...]
+2022-10-13 08:45:44.722 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 500
+2022-10-13 08:46:25.166  INFO [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-13 08:46:25.628  INFO [      Thread-40] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:46:25.629  INFO [      Thread-40] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-10-13 08:46:25.631  INFO [      Thread-40] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-10-13 08:46:25.637  INFO [      Thread-40] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:46:25.640  INFO [      Thread-40] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:46:25.644  INFO [      Thread-40] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:46:25.645  INFO [      Thread-40] c.z.h.HikariDataSource                   : HikariPool-10 - Shutdown initiated...
+2022-10-13 08:46:25.649  INFO [      Thread-40] c.z.h.HikariDataSource                   : HikariPool-10 - Shutdown completed.
+2022-10-13 08:46:25.997  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Starting SocietyManagementSystemApplication using Java 1.8.0_261 on DESKTOP-KLAODV1 with PID 8020 (E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem\target\classes started by Anonymous in E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem)
+2022-10-13 08:46:25.997 DEBUG [  restartedMain] c.e.d.SocietyManagementSystemApplication : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-13 08:46:25.998  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 08:46:26.328  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-13 08:46:26.385  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 7 JPA repository interfaces.
+2022-10-13 08:46:26.600  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2022-10-13 08:46:26.601  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:46:26.601  INFO [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-10-13 08:46:26.602  INFO [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 08:46:26.627  INFO [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-10-13 08:46:26.627  INFO [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 627 ms
+2022-10-13 08:46:26.637 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-13 08:46:26.637 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-10-13 08:46:26.679  INFO [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-13 08:46:26.685  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-11 - Starting...
+2022-10-13 08:46:26.691  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-11 - Start completed.
+2022-10-13 08:46:26.691  INFO [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-10-13 08:46:27.401  INFO [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-13 08:46:27.401  INFO [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:46:27.580  WARN [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-13 08:46:27.639 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-13 08:46:27.657 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2022-10-13 08:46:27.669 DEBUG [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-13 08:46:27.677 DEBUG [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-13 08:46:27.891  INFO [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 08:46:27.908  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:46:27.911  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2022-10-13 08:46:27.919  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Started SocietyManagementSystemApplication in 1.994 seconds (JVM running for 1385.515)
+2022-10-13 08:46:27.921  INFO [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-13 08:46:53.987  INFO [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-13 08:46:54.577  INFO [      Thread-44] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:46:54.578  INFO [      Thread-44] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-10-13 08:46:54.584  INFO [      Thread-44] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:46:54.587  INFO [      Thread-44] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:46:54.590  INFO [      Thread-44] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:46:54.592  INFO [      Thread-44] c.z.h.HikariDataSource                   : HikariPool-11 - Shutdown initiated...
+2022-10-13 08:46:54.596  INFO [      Thread-44] c.z.h.HikariDataSource                   : HikariPool-11 - Shutdown completed.
+2022-10-13 08:46:54.920  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Starting SocietyManagementSystemApplication using Java 1.8.0_261 on DESKTOP-KLAODV1 with PID 8020 (E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem\target\classes started by Anonymous in E:\JavaAdvancedBatch17\SpringBoot\SocietyManagementSystem)
+2022-10-13 08:46:54.921 DEBUG [  restartedMain] c.e.d.SocietyManagementSystemApplication : Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-13 08:46:54.922  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 08:46:55.237  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-13 08:46:55.286  INFO [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 7 JPA repository interfaces.
+2022-10-13 08:46:55.456  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2022-10-13 08:46:55.457  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:46:55.458  INFO [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-10-13 08:46:55.458  INFO [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 08:46:55.483  INFO [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-10-13 08:46:55.483  INFO [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 558 ms
+2022-10-13 08:46:55.494 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-13 08:46:55.494 DEBUG [  restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-10-13 08:46:55.620  INFO [  restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-13 08:46:55.637  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-12 - Starting...
+2022-10-13 08:46:55.647  INFO [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-12 - Start completed.
+2022-10-13 08:46:55.648  INFO [  restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-10-13 08:46:56.556  INFO [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-13 08:46:56.557  INFO [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:46:56.722  WARN [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-13 08:46:56.785 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-13 08:46:56.807 DEBUG [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2022-10-13 08:46:56.819 DEBUG [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-13 08:46:56.829 DEBUG [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-13 08:46:57.041  INFO [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 08:46:57.059  INFO [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:46:57.064  INFO [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2022-10-13 08:46:57.072  INFO [  restartedMain] c.e.d.SocietyManagementSystemApplication : Started SocietyManagementSystemApplication in 2.222 seconds (JVM running for 1414.668)
+2022-10-13 08:46:57.075  INFO [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-13 08:47:21.178  INFO [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 08:47:21.178  INFO [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-10-13 08:47:21.178 DEBUG [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2022-10-13 08:47:21.178 DEBUG [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Detected AcceptHeaderLocaleResolver
+2022-10-13 08:47:21.178 DEBUG [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Detected FixedThemeResolver
+2022-10-13 08:47:21.180 DEBUG [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3328a5c2
+2022-10-13 08:47:21.181 DEBUG [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5d56fa39
+2022-10-13 08:47:21.181 DEBUG [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-13 08:47:21.181  INFO [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2022-10-13 08:47:21.181 DEBUG [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : GET "/login?uname=abcd1&pass=abcd", parameters={masked}
+2022-10-13 08:47:21.182 DEBUG [nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#getLoginData(String, String)
+2022-10-13 08:47:21.190  INFO [nio-9000-exec-1] c.e.d.c.LoginController                  : Login Process Start : abcd1 abcd
+2022-10-13 08:47:21.190  INFO [nio-9000-exec-1] c.e.d.s.LoginServiceImpl                 : Login Credentials : abcd1 abcd
+2022-10-13 08:47:21.213 DEBUG [nio-9000-exec-1] c.e.d.s.LoginServiceImpl                 : Login Data Before : null
+2022-10-13 08:47:21.213 ERROR [nio-9000-exec-1] c.e.d.s.LoginServiceImpl                 : Invalid Username and Password...!
+2022-10-13 08:47:21.214 DEBUG [nio-9000-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.demo.exception.ExceptionHandlerController#handlingExaception(ResouceNotFoundException, HttpServletRequest)
+2022-10-13 08:47:21.217 DEBUG [nio-9000-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:47:21.218 DEBUG [nio-9000-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [ExceptionResponse(msg=Invalid Username and Password...!, url=/login)]
+2022-10-13 08:47:21.220  WARN [nio-9000-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.demo.exception.ResouceNotFoundException: Invalid Username and Password...!]
+2022-10-13 08:47:21.221 DEBUG [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:47:40.050 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : GET "/login?uname=abcd&pass=abcd", parameters={masked}
+2022-10-13 08:47:40.051 DEBUG [nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#getLoginData(String, String)
+2022-10-13 08:47:40.051  INFO [nio-9000-exec-3] c.e.d.c.LoginController                  : Login Process Start : abcd abcd
+2022-10-13 08:47:40.051  INFO [nio-9000-exec-3] c.e.d.s.LoginServiceImpl                 : Login Credentials : abcd abcd
+2022-10-13 08:47:40.071 DEBUG [nio-9000-exec-3] c.e.d.s.LoginServiceImpl                 : Login Data Before : Login(lid=4, uname=abcd, pass=abcd, isActive=false, security=null, admin=null, owner=null, tenant=Tenant(tid=1, tname=Ajas Shaikh, taddress=Pune, tcontactNo=78988783210, temailId=ajas@gamil.com, taadharNo=99875645765, tpanNo=OISDW1234, role=Role(rid=4, roleType=tenant)))
+2022-10-13 08:47:40.071 ERROR [nio-9000-exec-3] c.e.d.s.LoginServiceImpl                 : Pls Contact Your Admin...!
+2022-10-13 08:47:40.071 DEBUG [nio-9000-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.demo.exception.ExceptionHandlerController#handlingExaception(ResouceNotFoundException, HttpServletRequest)
+2022-10-13 08:47:40.077 DEBUG [nio-9000-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:47:40.078 DEBUG [nio-9000-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [ExceptionResponse(msg=Pls Contact Your Admin...!, url=/login)]
+2022-10-13 08:47:40.078  WARN [nio-9000-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.demo.exception.ResouceNotFoundException: Pls Contact Your Admin...!]
+2022-10-13 08:47:40.079 DEBUG [nio-9000-exec-3] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:47:53.469 DEBUG [nio-9000-exec-4] o.s.w.s.DispatcherServlet                : GET "/login?uname=admin&pass=admin", parameters={masked}
+2022-10-13 08:47:53.469 DEBUG [nio-9000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.LoginController#getLoginData(String, String)
+2022-10-13 08:47:53.470  INFO [nio-9000-exec-4] c.e.d.c.LoginController                  : Login Process Start : admin admin
+2022-10-13 08:47:53.470  INFO [nio-9000-exec-4] c.e.d.s.LoginServiceImpl                 : Login Credentials : admin admin
+2022-10-13 08:47:53.485 DEBUG [nio-9000-exec-4] c.e.d.s.LoginServiceImpl                 : Login Data Before : Login(lid=1, uname=admin, pass=admin, isActive=true, security=null, admin=Admin(aid=1, aname=Anonymous, address=AnyWhere, contactNo=0123456789, emailId=anonyomus@gamil.com, aadharNo=98765431234, panNo=QWTY1234, role=Role(rid=1, roleType=admin)), owner=null, tenant=null)
+2022-10-13 08:47:53.485 DEBUG [nio-9000-exec-4] c.e.d.s.LoginServiceImpl                 : Login Data In If : Login(lid=1, uname=admin, pass=admin, isActive=true, security=null, admin=Admin(aid=1, aname=Anonymous, address=AnyWhere, contactNo=0123456789, emailId=anonyomus@gamil.com, aadharNo=98765431234, panNo=QWTY1234, role=Role(rid=1, roleType=admin)), owner=null, tenant=null)
+2022-10-13 08:47:53.488 DEBUG [nio-9000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-13 08:47:53.488 DEBUG [nio-9000-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Login(lid=1, uname=admin, pass=admin, isActive=true, security=null, admin=Admin(aid=1, aname=Anonymo (truncated)...]
+2022-10-13 08:47:53.497 DEBUG [nio-9000-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2022-10-13 08:54:19.563  INFO [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-13 08:54:19.963  INFO [on(2)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:54:19.964  INFO [on(2)-127.0.0.1] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-10-13 08:54:19.966  INFO [on(2)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-10-13 08:54:19.973  INFO [on(2)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:54:19.977  INFO [on(2)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-9000"]
+2022-10-13 08:54:19.982  INFO [on(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 08:54:19.983  INFO [on(2)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-12 - Shutdown initiated...
+2022-10-13 08:54:19.988  INFO [on(2)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-12 - Shutdown completed.
