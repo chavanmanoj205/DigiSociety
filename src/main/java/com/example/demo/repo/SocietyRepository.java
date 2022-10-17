@@ -3,10 +3,10 @@ package com.example.demo.repo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.model.Admin;
+import com.example.demo.model.Society;
 
 @Repository
-public interface AdminRepository  extends JpaRepository<Admin, Integer>{
+public interface SocietyRepository extends JpaRepository<Society, Integer> {
 
-	Admin findByAname(String aname);
+	Society findBySocietyName(String sname);
 }

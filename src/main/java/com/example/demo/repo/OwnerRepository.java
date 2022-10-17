@@ -8,4 +8,5 @@ import com.example.demo.model.Owner;
 @Repository
 public interface OwnerRepository extends JpaRepository<Owner, Integer>{
 
+	Owner findByOname(String oname);
 }

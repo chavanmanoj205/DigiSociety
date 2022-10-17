@@ -34,13 +34,16 @@ public class LoginServiceImpl implements LoginService{
 		LOGGER.info("Login Credentials : " +  uname + " " + pass);
 		Login login = loginRepository.findByUnameAndPass(uname, pass);
 		LOGGER.debug("Login Data Before : " + login);
-		if(login != null && login.isActive()) {
+		if(login != null) {
+			if(login.isActive()) {
 			LOGGER.debug("Login Data In If : " + login);
 			return login;
-		}else if(login != null && !login.isActive()){
-			LOGGER.error("Pls Contact Your Admin...!");
-			throw new ResouceNotFoundException("Pls Contact Your Admin...!");
-		}else {
+			}
+			else {
+				LOGGER.error("Pls Contact Your Admin...!");
+				throw new ResouceNotFoundException("Pls Contact Your Admin...!");
+			}
+		}else{
 			LOGGER.error("Invalid Username and Password...!");
 			throw new ResouceNotFoundException("Invalid Username and Password...!");
 		}
