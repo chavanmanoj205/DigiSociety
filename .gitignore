@@ -37,3 +37,8 @@ build/
 
 ### VS Code ###
 .vscode/
+*.log
+*.log
+src/main/java/com/example/demo/.DS_Store
+src/.DS_Store
+*.png

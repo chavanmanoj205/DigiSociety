@@ -9,4 +9,6 @@ import com.example.demo.model.User;
 public interface UserRepository extends JpaRepository<User, Integer>{
 
 	User findByName(String name);
+	
+	//User findByUid(int id);
 }

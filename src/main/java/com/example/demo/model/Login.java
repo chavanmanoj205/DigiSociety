@@ -27,6 +27,7 @@ public class Login {
 	
 	private boolean isActive;
 	
+	
 	@OneToOne(cascade = CascadeType.ALL)
 	private Security security;
 	
@@ -38,5 +39,7 @@ public class Login {
 	
 	@OneToOne(cascade = CascadeType.ALL)
 	private Tenant tenant;
+	
+	
 	
 }
